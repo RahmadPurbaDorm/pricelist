@@ -123,6 +123,7 @@ body {
 
 footer {
   position: fixed;
+  flex: 1;
 }
 
 /* Responsive styles */

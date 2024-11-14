@@ -104,7 +104,7 @@ body {
   margin-bottom: 20px;
 }
 
-.order-button {
+.order-btn {
   background-color: #27ae60;
   color: white;
   padding: 10px 20px;
@@ -116,7 +116,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.order-button:hover {
+.order-btn:hover {
   background-color: #1e8449;
 }
 

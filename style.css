@@ -76,7 +76,6 @@ body {
 }
 
 .price-box {
-  flex: 1;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;

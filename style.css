@@ -120,6 +120,10 @@ body {
   background-color: #1e8449;
 }
 
+footer {
+  position: fixed;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .container {

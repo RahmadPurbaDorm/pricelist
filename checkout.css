@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10px;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 h1 {
@@ -54,10 +55,11 @@ input[type="text"],
 input[type="email"],
 input[type="tel"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .checkout-button {
@@ -76,19 +78,41 @@ input[type="tel"] {
     background-color: #45a049;
 }
 
-/* Responsive untuk layar kecil */
-@media (max-width: 600px) {
+/* Responsiveness */
+
+@media (max-width: 768px) {
     .container {
-        padding: 10px;
-        width: 90%;
+        padding: 15px;
     }
 
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .checkout-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
     h1 {
         font-size: 20px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .order-details, .guest-details, .payment-summary {
@@ -99,10 +123,11 @@ input[type="tel"] {
     input[type="email"],
     input[type="tel"] {
         padding: 6px;
+        font-size: 12px;
     }
 
     .checkout-button {
-        padding: 12px;
-        font-size: 16px;
+        padding: 10px;
+        font-size: 14px;
     }
 }

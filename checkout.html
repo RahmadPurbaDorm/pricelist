@@ -41,13 +41,6 @@
         <button class="checkout-button" onclick="window.location.href='pay.html'">Bayar Sekarang</button>
 
     </div>
-        <!-- Modal Pesanan Sukses -->
-        <div class="modal" id="success-modal">
-            <div class="modal-content">
-                <h2>Pembayaran Sukses!</h2>
-                <p>Terima kasih telah memesan kamar di RahmadPurba.Dorm.</p>
-            </div>
-        </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const checkoutButton = document.querySelector(".checkout-button");
@@ -76,19 +69,6 @@
                     document.getElementById("name").value = "";
                     document.getElementById("email").value = "";
                     document.getElementById("phone").value = "";
-                }
-        // Tampilkan modal sukses
-                    modal.style.display = "flex";
-
-                    // Reset form
-                    document.getElementById("name").value = "";
-                    document.getElementById("email").value = "";
-                    document.getElementById("phone").value = "";
-
-                    // Sembunyikan modal setelah beberapa detik
-                    setTimeout(() => {
-                        modal.style.display = "none";
-                    }, 3000);
                 }
             });
     </script>

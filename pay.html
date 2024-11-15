@@ -12,6 +12,22 @@
             <p>Terima kasih telah memesan kamar di RahmadPurba.Dorm.</p>
         </div>
     </main>
-    
+    <script>
+                        // Konfirmasi Checkout
+                        const confirmation = confirm("Apakah Anda yakin ingin melakukan pembayaran?");
+                if (confirmation) {
+                    // Tampilkan modal sukses
+                    modal.style.display = "flex";
+
+                    // Reset form
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("phone").value = "";
+
+                    // Sembunyikan modal setelah beberapa detik
+                    setTimeout(() => {
+                        modal.style.display = "none";
+                    }, 3000);
+    </script>
 </body>
 </html>

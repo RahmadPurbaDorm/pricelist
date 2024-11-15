@@ -72,48 +72,6 @@
             });
         });
     </script>
-    <div class="success-overlay" id="successOverlay">
-        <div class="success-message">
-            <h2>Pembayaran Sukses!</h2>
-            <p>Terima kasih telah melakukan pemesanan. Pesanan Anda telah dikonfirmasi.</p>
-            <button onclick="closeSuccessMessage()">Tutup</button>
-        </div>
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const checkoutButton = document.querySelector(".checkout-button");
-    
-            checkoutButton.addEventListener("click", () => {
-                // Mengambil detail tamu
-                const name = document.getElementById("name").value;
-                const email = document.getElementById("email").value;
-                const phone = document.getElementById("phone").value;
-    
-                // Validasi
-                if (!name || !email || !phone) {
-                    alert("Mohon lengkapi semua detail tamu sebelum melanjutkan ke pembayaran.");
-                    return;
-                }
-    
-                // Konfirmasi Checkout
-                const confirmation = confirm("Apakah Anda yakin ingin melakukan pembayaran?");
-                if (confirmation) {
-                    // Tampilkan overlay pesan sukses
-                    document.getElementById("successOverlay").style.display = "flex";
-    
-                    // Reset form
-                    document.getElementById("name").value = "";
-                    document.getElementById("email").value = "";
-                    document.getElementById("phone").value = "";
-                }
-            });
-        });
-    
-        // Fungsi untuk menutup pesan sukses
-        function closeSuccessMessage() {
-            document.getElementById("successOverlay").style.display = "none";
-        }
-    </script>
-        
+
 </body>
 </html>

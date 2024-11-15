@@ -70,6 +70,19 @@
                     document.getElementById("email").value = "";
                     document.getElementById("phone").value = "";
                 }
+        // Tampilkan modal sukses
+                    modal.style.display = "flex";
+
+                    // Reset form
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("phone").value = "";
+
+                    // Sembunyikan modal setelah beberapa detik
+                    setTimeout(() => {
+                        modal.style.display = "none";
+                    }, 3000);
+                }
             });
     </script>
 

@@ -107,7 +107,7 @@ header {
 
 .order-btn {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #4caf50 ;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -117,7 +117,7 @@ header {
 }
 
 .order-btn:hover {
-  background-color: #0056b3;
+  background-color: #4caf50;
 }
 
 footer {
